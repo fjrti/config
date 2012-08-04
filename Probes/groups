@@ -1,0 +1,10 @@
+#!/bin/bash
+
+case "$(uname -m)" in
+  x86_64)
+    echo group:amd64
+    ;;
+  i686)
+    echo group:i386
+    ;;
+esac
