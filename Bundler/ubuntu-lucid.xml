@@ -1,0 +1,3 @@
+<Bundle name='ubuntu-lucid'>
+  <Package name='ubuntu-standard'/>
+</Bundle>

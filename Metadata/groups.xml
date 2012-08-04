@@ -3,6 +3,7 @@
       <Group name='ubuntu-lucid'/>
    </Group>
    <Group name='ubuntu-lucid'>
+     <Bundle name='ubuntu-lucid'/>
      <Group name='ubuntu'/>
    </Group>
    <Group name='ubuntu'/>
