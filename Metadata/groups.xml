@@ -8,4 +8,9 @@
    </Group>
    <Group name='ubuntu'/>
    <Group name='solaris'/>
+
+   <!-- HCS server groups -->
+   <Group name='config-server'>
+     <Bundle name='config-server'/>
+   </Group>
 </Groups>

@@ -1,0 +1,13 @@
+<Bundle name='config-server'>
+  <Package name='bcfg2-server'/>
+  <Package name='git-core'/>
+
+  <!-- In theory these should have come in as dependencies of bcfg2-server, but
+       they didn't. No idea why. -->
+  <Package name='python-cheetah'/>
+  <Package name='python-fam'/>
+  <Package name='python-gamin'/>
+  <Package name='python-genshi'/>
+  <Package name='ttf-dejavu-core'/>
+  <Package name='libgd2-noxpm'/>
+</Bundle>
