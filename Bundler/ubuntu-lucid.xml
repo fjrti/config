@@ -32,6 +32,7 @@
   <Service name='console-setup'/>
   <Service name='control-alt-delete'/>
   <Service name='cron'/>
+  <Service name='dbus'/>
   <Service name='dmesg'/>
   <Service name='dns-clean'/>
   <Service name='grub-common'/>

@@ -10,4 +10,7 @@
   <Package name='python-genshi'/>
   <Package name='ttf-dejavu-core'/>
   <Package name='libgd2-noxpm'/>
+
+  <Service name='bcfg2-server'/>
+  <Service name='failsafe-x'/>
 </Bundle>
