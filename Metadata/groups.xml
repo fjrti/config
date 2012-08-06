@@ -4,6 +4,7 @@
    </Group>
    <Group name='ubuntu-lucid'>
      <Bundle name='ubuntu-lucid'/>
+     <Bundle name='root-dotfiles'/>
      <Group name='ubuntu'/>
    </Group>
    <Group name='ubuntu'/>
