@@ -3,4 +3,8 @@
     <NamePattern>config\d+.hcs.harvard.edu</NamePattern>
     <Group>config-server</Group>
   </GroupPattern>
+  <GroupPattern>
+    <NamePattern>mail\d+.hcs.harvard.edu</NamePattern>
+    <Group>mail-server</Group>
+  </GroupPattern>
 </GroupPatterns>

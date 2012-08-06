@@ -13,4 +13,7 @@
    <Group name='config-server'>
      <Bundle name='config-server'/>
    </Group>
+   <Group name='mail-server'>
+     <Bundle name='mail-server'/>
+   </Group>
 </Groups>

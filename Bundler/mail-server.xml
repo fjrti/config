@@ -1,0 +1,13 @@
+<Bundle name='mail-server'>
+  <Package name='dovecot-imapd'/>
+  <Package name='dovecot-pop3d'/>
+  <Package name='postfix'/>
+  <Package name='postgrey'/>
+  <Package name='spamassassin'/>
+  <Package name='spamc'/>
+
+  <Service name='dovecot'/>
+  <Service name='postfix'/>
+  <Service name='postgrey'/>
+  <Service name='spamassassin'/>
+</Bundle>
