@@ -1,0 +1,27 @@
+# HCS generic mail configuration
+#
+# We use this on most of our hosts to blindly relay mail into our central mail
+# servers for delivery.
+
+mydomain = hcs.harvard.edu
+
+# Banner sent to clients on connect.
+smtpd_banner = $myhostname ESMTP $mail_name
+
+# `biff` sends new mail notifications to local users, but also is a performance
+# drain.
+biff = no
+
+# Don't automatically append a domain to unqualified emails.
+append_dot_mydomain = no
+
+# Relay all mail to our central mail servers. That way we only need reliable
+# queues in one place.
+relayhost = [mail.hcs.harvard.edu]
+
+# Only accept mail from this machine. Don't listen on the public network.
+inet_interfaces = loopback-only
+mynetworks = 127.0.0.0/8
+
+# Don't deliver mail locally ourselves--that's someone else's job.
+local_transport = error:local delivery is disabled
