@@ -19,6 +19,7 @@
   <Service name='postgrey' />
   <Service name='spamassassin' />
 
+  <Path name='/etc/dovecot/dovecot.conf' />
   <Path name='/etc/postfix/main.cf' />
   <Path name='/etc/postfix/transport' />
   <Path name='/etc/procmailrc' />
