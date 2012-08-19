@@ -1,6 +1,6 @@
 <Rules priority='2'>
   <Group name='config-server'>
-    <Service type='deb' status='on' name='bcfg2-server'/>
-    <Service type='upstart' status='off' name='failsafe-x'/>
+    <Service type='deb' status='on' name='bcfg2-server' />
+    <Service type='upstart' status='off' name='failsafe-x' />
   </Group>
 </Rules>

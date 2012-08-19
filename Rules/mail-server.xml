@@ -1,10 +1,10 @@
 <Rules priority='1'>
   <Group name='mail-server'>
-    <Service type='deb' status='on' name='dovecot'/>
-    <Service type='deb' status='on' name='postfix'/>
-    <Service type='deb' status='on' name='postgrey'/>
-    <Service type='deb' status='on' name='spamassassin'/>
-    <Service type='deb' status='on' name='apache2'/>
-    <Service type='deb' status='on' name='mailman'/>
+    <Service type='deb' status='on' name='dovecot' />
+    <Service type='deb' status='on' name='postfix' />
+    <Service type='deb' status='on' name='postgrey' />
+    <Service type='deb' status='on' name='spamassassin' />
+    <Service type='deb' status='on' name='apache2' />
+    <Service type='deb' status='on' name='mailman' />
   </Group>
 </Rules>

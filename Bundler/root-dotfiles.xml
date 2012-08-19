@@ -1,5 +1,5 @@
 <Bundle name='root-dotfiles'>
-  <Path name='/root/.gitconfig'/>
-  <Path name='/root/.screenrc'/>
-  <Path name='/root/.vimrc'/>
+  <Path name='/root/.gitconfig' />
+  <Path name='/root/.screenrc' />
+  <Path name='/root/.vimrc' />
 </Bundle>
