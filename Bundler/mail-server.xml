@@ -19,7 +19,9 @@
   <Service name='postgrey'/>
   <Service name='spamassassin'/>
 
-  <Path name="/etc/postfix/main.cf"/>
-  <Path name="/etc/postfix/transport"/>
-  <Path name="/etc/procmailrc"/>
+  <Path name='/etc/postfix/main.cf'/>
+  <Path name='/etc/postfix/transport'/>
+  <Path name='/etc/procmailrc'/>
+
+  <Action name='postmap-transport-table'/>
 </Bundle>

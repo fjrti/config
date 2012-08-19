@@ -1,0 +1,4 @@
+<Rules priority='1'>
+  <Action name='postmap-transport-table' timing='post' when='modified'
+    command='postmap /etc/postfix/transport' status='ignore' />
+</Rules>
