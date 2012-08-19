@@ -9,15 +9,12 @@
   <Package name='postfix-cdb' />
   <Package name='postgrey' />
   <Package name='procmail' />
-  <Package name='spamassassin' />
-  <Package name='spamc' />
 
   <Service name='mailman' />
   <Service name='apache2' />
   <Service name='dovecot' />
   <Service name='postfix' />
   <Service name='postgrey' />
-  <Service name='spamassassin' />
 
   <Path name='/etc/dovecot/dovecot.conf' />
   <Path name='/etc/postfix/main.cf' />
