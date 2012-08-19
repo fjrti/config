@@ -5,7 +5,7 @@
 mydomain = hcs.harvard.edu
 
 # Trusted networks to relay mail on behalf of.
-mynetworks = 127.0.0.1/8, !140.247.89.129/32, 140.247.89.128/25
+mynetworks = 127.0.0.0/8, !140.247.89.129/32, 140.247.89.128/25
 
 # We will attempt to locally deliver mail to the following hosts.
 mydestination = localhost, localhost.localdomain, $myhostname, $mydomain
