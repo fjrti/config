@@ -76,6 +76,13 @@ append_dot_mydomain = no
 # This allow's gmail-style + handling.
 recipient_delimiter = +
 
+# Forward file. Allows forwarding email elsewhere.
+forward_path = $home/.forward
+
+# Actually deliver mail with procmail. This allows users to write their own
+# scripts that process the mail they are sent.
+mailbox_command = /usr/bin/procmail -a "$EXTENSION"
+
 # Use CDB as our default database type (this changes the behavior of postmap,
 # among others). This is not so much because of any efficiency gains that CDB
 # offers, but because it does atomic renames to update the database. We've
