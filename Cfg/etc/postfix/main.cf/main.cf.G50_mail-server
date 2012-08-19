@@ -47,6 +47,21 @@ transport_maps = cdb:/etc/postfix/transport
 
 ### Spam
 
+smtpd_client_restrictions =
+  permit_mynetworks,
+  permit_sasl_authenticated,
+  reject_rbl_client zen.spamhaus.org,
+  reject_rbl_client dnsbl.njabl.org,
+  reject_rbl_client bl.spamcop.net,
+  permit
+
+smtpd_recipient_restrictions =
+  permit_mynetworks,
+  reject_non_fqdn_recipient,
+  reject_unauth_destination,
+  # TODO: the old conf whitelisted a whole bunch of servers by IP here
+  check_policy_service inet:127.0.0.1:10023
+
 # TODO: configure postgrey, reject_rbl_client, spamassassin, etc.
 
 
