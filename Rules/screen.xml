@@ -1,0 +1,3 @@
+<Rules priority='1'>
+  <Service type='upstart' status='off' name='screen-cleanup' />
+</Rules>

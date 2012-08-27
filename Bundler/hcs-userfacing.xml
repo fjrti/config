@@ -1,0 +1,27 @@
+<!-- Programs HCS makes available to its end users -->
+<Bundle name='hcs-userfacing'>
+  <!-- Essentials -->
+  <Package name='build-essential' />
+
+  <!-- Languages -->
+  <Package name='ghc6' />
+  <Package name='perl' />
+  <Package name='php5-cli' />
+  <Package name='python' />
+  <Package name='ruby' />
+
+  <!-- Version Control -->
+  <Package name='bzr' />
+  <Package name='git-core' />
+  <Package name='mercurial' />
+  <Package name='subversion' />
+
+  <!-- Editors -->
+  <Package name='emacs23-nox' />
+  <Package name='vim' />
+
+  <!-- General Utilities -->
+  <Package name='curl' />
+  <Package name='gnupg' />
+  <Package name='mysql-client' />
+</Bundle>
