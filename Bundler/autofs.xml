@@ -1,0 +1,22 @@
+<Bundle name='autofs'>
+  <Package name='autofs' />
+
+  <!-- Note: something is wrong with the service definitions here. If this
+       bundle changes, the machine will scream bloody murder when trying to
+       restart some of these services. -->
+  <Service name='autofs' />
+  <Service name='gssd' />
+  <Service name='idmapd' />
+  <Service name='portmap' />
+  <Service name='portmap-boot' />
+  <Service name='portmap-wait' />
+  <Service name='statd' />
+  <Service name='statd-mounting' />
+
+  <Path name='/nfs' />
+  <Path name='/nfs/home' />
+  <Path name='/etc/auto.master' />
+  <Path name='/etc/autofs/nfs.people' />
+  <Path name='/etc/autofs/nfs.groups' />
+  <Path name='/etc/autofs/nfs.hcs' />
+</Bundle>

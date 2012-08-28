@@ -1,0 +1,7 @@
+# Mount homedirs automatically. See auto.master(5), autofs(8)
+
+/nfs/home/people /etc/autofs/nfs.people rw,relatime,nosuid,nodev
+/nfs/home/groups /etc/autofs/nfs.groups rw,relatime,nosuid,nodev
+/nfs/home/hcs /etc/autofs/nfs.hcs rw,relatime,nosuid,nodev
+# Note: we used to mount /nfs/home/general as well, but we never really used
+# general accounts, so I decided not to include them here.

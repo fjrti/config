@@ -1,0 +1,4 @@
+<Rules priority='1'>
+  <Path name='/nfs' type='directory' owner='root' group='root' perms='755' />
+  <Path name='/nfs/home' type='directory' owner='root' group='root' perms='755' />
+</Rules>

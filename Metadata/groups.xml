@@ -4,12 +4,12 @@
   </Group>
   <Group name='ubuntu-lucid'>
     <Bundle name='ubuntu-lucid' />
-    <Bundle name='root-dotfiles' />
-    <Bundle name='hcs-sysadmin' />
     <Group name='ubuntu' />
   </Group>
-  <Group name='ubuntu' />
-  <Group name='solaris' />
+  <Group name='ubuntu'>
+    <Bundle name='root-dotfiles' />
+    <Bundle name='hcs-sysadmin' />
+  </Group>
 
   <!-- HCS server groups -->
   <Group name='config-server'>
@@ -17,6 +17,13 @@
   </Group>
   <Group name='mail-server'>
     <Bundle name='mail-server' />
+    <Group name='homedirs' />
+  </Group>
+
+  <!-- Utility groups -->
+  <Group name='homedirs'> <!-- Use LDAP, automount homedirs, etc. -->
     <Bundle name='hcs-userfacing' />
+    <Bundle name='ldap-client' />
+    <Bundle name='autofs' />
   </Group>
 </Groups>

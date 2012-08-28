@@ -1,0 +1,11 @@
+<Bundle name='ldap-cient'>
+  <Package name='ldap-auth-client' />
+  <Package name='nscd' />
+
+  <Service name='libnss-ldap' />
+  <Service name='nscd' />
+
+  <!-- ...couldn't they have given these two things more dissimilar names? -->
+  <Path name='/etc/ldap.conf' />
+  <Path name='/etc/ldap/ldap.conf' />
+</Bundle>
