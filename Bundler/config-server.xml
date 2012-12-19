@@ -5,6 +5,7 @@
   <Package name='libgd2-noxpm' />
   <Package name='python-pyinotify' />
   <Package name='python3.2' />
+  <Package name='ttf-dejavu-core' />
 
   <Service name='bcfg2-server' />
 </Bundle>
