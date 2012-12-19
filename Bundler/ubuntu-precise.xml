@@ -14,9 +14,11 @@
   <Package name='landscape-client' />
   <Package name='openssh-server' />
   <Package name='tasksel' />
-  <Package name='wpasupplicant' />
+  <Package name='update-notifier-common' />
+  <Package name='w3m' />
   <Package name='whoopsie' />
   <Package name='wireless-tools' />
+  <Package name='wpasupplicant' />
 
   <!-- AWS things -->
   <Package name='cloud-init' />
