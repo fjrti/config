@@ -5,11 +5,16 @@
 
   <!-- Basic packages -->
   <Package name='acpid' />
+  <Package name='apport' />
   <Package name='aptitude' />
   <Package name='bind9-host' />
+  <Package name='crda' />
+  <Package name='fonts-ubuntu-font-family-console' />
   <Package name='grub-pc' />
+  <Package name='landscape-client' />
   <Package name='openssh-server' />
   <Package name='tasksel' />
+  <Package name='wpasupplicant' />
 
   <!-- AWS things -->
   <Package name='cloud-init' />
