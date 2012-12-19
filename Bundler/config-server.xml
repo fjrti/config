@@ -2,6 +2,7 @@
   <Package name='bcfg2-server' />
   <Package name='git' />
 
+  <Package name='libgd2-noxpm' />
   <Package name='python-pyinotify' />
   <Package name='python3.2' />
 
