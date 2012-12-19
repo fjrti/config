@@ -4,7 +4,17 @@
   <Package name='linux-virtual' />
 
   <!-- Basic packages -->
-  <Package name='vim' />
+  <Package name='acpid' />
+  <Package name='aptitude' />
+  <Package name='bind9-host' />
+  <Package name='grub-pc' />
+  <Package name='openssh-server' />
+  <Package name='tasksel' />
+
+  <!-- AWS things -->
+  <Package name='cloud-init' />
+  <Package name='cloud-initramfs-growroot' />
+  <Package name='cloud-initramfs-rescuevol' />
 
   <!-- Custom HCS additions -->
   <Package name='bcfg2' />

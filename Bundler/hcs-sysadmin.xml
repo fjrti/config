@@ -1,6 +1,7 @@
 <!-- Programs that are installed for sysadmin happiness -->
 <Bundle name='hcs-sysadmin'>
   <Package name='bwm-ng' />
+  <Package name='byobu' />
   <Package name='curl' />
   <Package name='dstat' />
   <Package name='htop' />
@@ -10,6 +11,4 @@
   <Package name='tmux' />
   <Package name='traceroute' />
   <Package name='vim' />
-
-  <Service name='screen-cleanup' />
 </Bundle>
