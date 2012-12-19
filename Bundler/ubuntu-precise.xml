@@ -1,0 +1,11 @@
+<Bundle name='ubuntu-lucid'>
+  <Package name='ubuntu-minimal' />
+  <Package name='ubuntu-standard' />
+  <Package name='linux-virtual' />
+
+  <!-- Basic packages -->
+  <Package name='vim' />
+
+  <!-- Custom HCS additions -->
+  <Package name='bcfg2' />
+</Bundle>
