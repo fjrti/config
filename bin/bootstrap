@@ -1,0 +1,64 @@
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ]; then
+  echo "This script must be run as root."
+  exit 2
+fi
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 bcfg2-crypt-key"
+  echo "Find bcfg2-crypt-key in the secrets repo"
+  exit 1
+fi
+
+key="$1"
+
+# First, set up bcfg2.conf
+temp_pass=$(openssl rand -hex 12)
+
+: > /etc/bcfg2.conf
+chmod 600 /etc/bcfg2.conf
+
+cat > /etc/bcfg2.conf <<EOF
+# Bootstrapped bcfg2.conf. Run "bcfg2 -vqe" to complete the process
+# Created by hcs/config:bin/bootstrap
+[server]
+repository = /var/lib/bcfg2
+plugins = Bundler,Cfg,GroupPatterns,Metadata,Packages,Probes,Rules
+
+[database]
+engine = sqlite3
+
+[communication]
+protocol = xmlrpc/ssl
+password = $temp_pass
+certificate = /etc/ssl/certs/config.pem
+key = /etc/ssl/private/config.key
+ca = /etc/ssl/certs/config.pem
+
+[components]
+bcfg2 = https://localhost:6789
+
+[encryption]
+config = $key
+EOF
+
+cat > /tmp/bcfg2-client.conf <<EOF
+[communication]
+protocol = xmlrpc/ssl
+password = $temp_pass
+ca = /etc/ssl/certs/config.pem
+user = config.hcs.harvard.edu
+
+[components]
+bcfg2 = https://localhost:6789
+EOF
+
+# Copy the cert and key over
+bcfg2-crypt --decrypt --stdout /var/lib/bcfg2/Cfg/etc/ssl/private/config.key/config.key.crypt > /etc/ssl/private/config.key
+cp /var/lib/bcfg2/Cfg/etc/ssl/certs/config.pem/config.pem /etc/ssl/certs/config.pem
+
+/etc/init.d/bcfg2-server restart
+
+echo bcfg2 -vqen -C /tmp/bcfg2-client.conf
+bcfg2 -vqen -C /tmp/bcfg2-client.conf
