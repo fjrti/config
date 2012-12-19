@@ -1,6 +1,6 @@
 <GroupPatterns>
   <GroupPattern>
-    <NamePattern>config\d+.hcs.harvard.edu</NamePattern>
+    <NamePattern>config\d*.hcs.harvard.edu</NamePattern>
     <Group>config-server</Group>
   </GroupPattern>
   <GroupPattern>
