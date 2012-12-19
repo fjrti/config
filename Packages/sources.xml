@@ -11,10 +11,19 @@
       <Component>universe</Component>
       <Arch>i386</Arch>
       <Arch>amd64</Arch>
+
+      <!-- We want to get bcfg2 from the PPA below -->
+      <Blacklist>bcfg2</Blacklist>
+      <Blacklist>bcfg2-server</Blacklist>
     </Source>
     <Source type='apt' url='http://us-east-1.ec2.archive.ubuntu.com/ubuntu/' version='precise-security' recommended='true'>
       <Component>main</Component>
       <Component>universe</Component>
+      <Arch>i386</Arch>
+      <Arch>amd64</Arch>
+    </Source>
+    <Source type='apt' url='http://ppa.launchpad.net/bcfg2/precisetesting/ubuntu' version='precise' recommended='true'>
+      <Component>main</Component>
       <Arch>i386</Arch>
       <Arch>amd64</Arch>
     </Source>
