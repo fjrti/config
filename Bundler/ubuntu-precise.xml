@@ -22,6 +22,7 @@
   <Package name='cloud-init' />
   <Package name='cloud-initramfs-growroot' />
   <Package name='cloud-initramfs-rescuevol' />
+  <Package name='grub-legacy-ec2' />
 
   <!-- Custom HCS additions -->
   <Package name='bcfg2' />
