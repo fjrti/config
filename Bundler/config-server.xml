@@ -2,5 +2,8 @@
   <Package name='bcfg2-server' />
   <Package name='git' />
 
+  <Package name='python-pyinotify' />
+  <Package name='python3.2' />
+
   <Service name='bcfg2-server' />
 </Bundle>
