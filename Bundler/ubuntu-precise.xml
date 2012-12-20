@@ -38,7 +38,7 @@
   <Service name='cloud-final' />
   <Service name='cloud-init' />
   <Service name='cloud-init-local' />
-  <Service name='cloud-init-local-nonet' />
+  <Service name='cloud-init-nonet' />
   <Service name='console' />
   <Service name='console-setup' />
   <Service name='container-detect' />

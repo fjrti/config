@@ -3,6 +3,7 @@
   <Service name='apport'                      type='upstart'  status='on'     />
   <Service name='atd'                         type='upstart'  status='on'     />
   <Service name='bcfg2'                       type='deb'      status='off'    />
+  <Service name='bcfg2-server'                type='deb'      status='on'     />
   <Service name='cloud-config'                type='upstart'  status='on'     />
   <Service name='cloud-final'                 type='upstart'  status='on'     />
   <Service name='cloud-init'                  type='upstart'  status='off'    />
