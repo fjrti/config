@@ -59,6 +59,8 @@ bcfg2-crypt --decrypt --stdout /var/lib/bcfg2/Cfg/etc/ssl/private/config.key/con
 cp /var/lib/bcfg2/Cfg/etc/ssl/certs/config.pem/config.pem /etc/ssl/certs/config.pem
 
 /etc/init.d/bcfg2-server restart
+bcfg2-admin xcmd Packages.Refresh
 
-echo bcfg2 -vqen -C /tmp/bcfg2-client.conf
-bcfg2 -vqen -C /tmp/bcfg2-client.conf
+# I think this needs to be run twice? I'm not really sure
+bcfg2 -qn  -C /tmp/bcfg2-client.conf
+bcfg2 -vqe -C /tmp/bcfg2-client.conf
