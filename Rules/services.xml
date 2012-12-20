@@ -2,10 +2,10 @@
   <Service name='acpid'                       type='upstart'  status='on'     />
   <Service name='apport'                      type='upstart'  status='on'     />
   <Service name='atd'                         type='upstart'  status='on'     />
-  <Service name='bcfg2'                       type='deb'      status='off'    />
+  <Service name='bcfg2'                       type='deb'      status='on'     />
   <Service name='bcfg2-server'                type='deb'      status='on'     />
-  <Service name='cloud-config'                type='upstart'  status='on'     />
-  <Service name='cloud-final'                 type='upstart'  status='on'     />
+  <Service name='cloud-config'                type='upstart'  status='off'    />
+  <Service name='cloud-final'                 type='upstart'  status='off'    />
   <Service name='cloud-init'                  type='upstart'  status='off'    />
   <Service name='cloud-init-local'            type='upstart'  status='off'    />
   <Service name='cloud-init-nonet'            type='upstart'  status='off'    />
@@ -15,7 +15,7 @@
   <Service name='control-alt-delete'          type='upstart'  status='off'    />
   <Service name='cron'                        type='upstart'  status='on'     />
   <Service name='cryptdisks-enable'           type='upstart'  status='off'    />
-  <Service name='cryptdisks-udev'             type='upstart'  status='off'    />
+  <Service name='cryptdisks-udev'             type='upstart'  status='ignore' />
   <Service name='dbus'                        type='upstart'  status='on'     />
   <Service name='dmesg'                       type='upstart'  status='off'    />
   <Service name='dns-clean'                   type='deb'      status='on'     />
@@ -28,7 +28,7 @@
   <Service name='hwclock-save'                type='upstart'  status='off'    />
   <Service name='irqbalance'                  type='upstart'  status='off'    />
   <Service name='killprocs'                   type='deb'      status='on'     />
-  <Service name='landscape-client'            type='deb'      status='off'    />
+  <Service name='landscape-client'            type='deb'      status='on'     />
   <Service name='module-init-tools'           type='upstart'  status='off'    />
   <Service name='mountall'                    type='upstart'  status='off'    />
   <Service name='mountall-net'                type='upstart'  status='off'    />
@@ -61,7 +61,7 @@
   <Service name='rc.local'                    type='deb'      status='on'     />
   <Service name='rcS'                         type='upstart'  status='off'    />
   <Service name='resolvconf'                  type='upstart'  status='on'     />
-  <Service name='rsync'                       type='deb'      status='off'    />
+  <Service name='rsync'                       type='deb'      status='on'     />
   <Service name='rsyslog'                     type='upstart'  status='on'     />
   <Service name='screen-cleanup'              type='upstart'  status='off'    />
   <Service name='setvtrgb'                    type='upstart'  status='off'    />
@@ -84,6 +84,6 @@
   <Service name='upstart-socket-bridge'       type='upstart'  status='on'     />
   <Service name='upstart-udev-bridge'         type='upstart'  status='on'     />
   <Service name='ureadahead-other'            type='upstart'  status='off'    />
-  <Service name='wait-for-state'              type='upstart'  status='off'    />
+  <Service name='wait-for-state'              type='upstart'  status='ignore' />
   <Service name='whoopsie'                    type='upstart'  status='on'     />
 </Rules>
