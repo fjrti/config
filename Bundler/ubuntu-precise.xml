@@ -90,7 +90,6 @@
   <Service name='resolvconf' />
   <Service name='rsync' />
   <Service name='rsyslog' />
-  <Service name='screen-cleanup' />
   <Service name='setvtrgb' />
   <Service name='shutdown' />
   <Service name='single' />

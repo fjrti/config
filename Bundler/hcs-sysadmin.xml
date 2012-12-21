@@ -12,4 +12,6 @@
   <Package name='tmux' />
   <Package name='traceroute' />
   <Package name='vim' />
+
+  <Service name='screen-cleanup' />
 </Bundle>
