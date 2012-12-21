@@ -7,4 +7,8 @@
     <NamePattern>mail\d+.hcs.harvard.edu</NamePattern>
     <Group>mail-server</Group>
   </GroupPattern>
+  <GroupPattern>
+    <NamePattern>file\d+.hcs.harvard.edu</NamePattern>
+    <Group>file-server</Group>
+  </GroupPattern>
 </GroupPatterns>

@@ -31,4 +31,13 @@
       <Arch>amd64</Arch>
     </Source>
   </Group>
+
+  <Group name='file-server'>
+    <!-- ZFS on Ubuntu PPA -->
+    <Source type='apt' url='http://ppa.launchpad.net/zfs-native/stable/ubuntu' version='precise' recommended='true'>
+      <Component>main</Component>
+      <Arch>i386</Arch>
+      <Arch>amd64</Arch>
+    </Source>
+  </Group>
 </Sources>

@@ -19,6 +19,9 @@
     <Bundle name='mail-server' />
     <Group name='homedirs' />
   </Group>
+  <Group name='file-server'>
+    <Bundle name='zfs' />
+  </Group>
 
   <!-- Utility groups -->
   <Group name='homedirs'> <!-- Use LDAP, automount homedirs, etc. -->
