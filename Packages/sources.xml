@@ -22,6 +22,9 @@
       <Arch>i386</Arch>
       <Arch>amd64</Arch>
     </Source>
+
+    <!-- bcfg2 testing PPA, for bcfg2 1.3. We should switch this to the normal
+         PPA when 1.3 is released -->
     <Source type='apt' url='http://ppa.launchpad.net/bcfg2/precisetesting/ubuntu' version='precise' recommended='true'>
       <Component>main</Component>
       <Arch>i386</Arch>
