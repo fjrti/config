@@ -4,6 +4,7 @@
   <Package name='byobu' />
   <Package name='curl' />
   <Package name='dstat' />
+  <Package name='git' />
   <Package name='htop' />
   <Package name='iftop' />
   <Package name='iotop' />

@@ -1,7 +1,7 @@
-<Bundle name='config-server'>
+<Bundle name='bcfg2-server'>
   <Package name='bcfg2-server' />
-  <Package name='git' />
 
+  <!-- Resolve dependency choices -->
   <Package name='libgd2-noxpm' />
   <Package name='python-pyinotify' />
   <Package name='python3.2' />

@@ -13,7 +13,7 @@
 
   <!-- HCS server groups -->
   <Group name='config-server'>
-    <Bundle name='config-server' />
+    <Bundle name='bcfg2-server' />
   </Group>
   <Group name='mail-server'>
     <Bundle name='mail-server' />
