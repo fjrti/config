@@ -12,7 +12,7 @@
 
   <!-- Version Control -->
   <Package name='bzr' />
-  <Package name='git-core' />
+  <Package name='git' />
   <Package name='mercurial' />
   <Package name='subversion' />
 

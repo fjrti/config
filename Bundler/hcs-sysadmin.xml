@@ -1,4 +1,4 @@
-<!-- Programs that are installed for sysadmin happiness -->
+<!-- Programs that are installed everywhere for sysadmin happiness -->
 <Bundle name='hcs-sysadmin'>
   <Package name='bwm-ng' />
   <Package name='byobu' />
