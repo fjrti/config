@@ -1,0 +1,6 @@
+<Bundle name="kernel" xmlns:py="http://genshi.edgewall.org/">
+  <Package name='linux-virtual' />
+
+  <!-- Never delete the currently running kernel -->
+  <Package name="${metadata.Probes['kernel']}" />
+</Bundle>

@@ -3,6 +3,7 @@
     <Group name='ubuntu-precise' />
   </Group>
   <Group name='ubuntu-precise'>
+    <Bundle name='kernel' />
     <Bundle name='ubuntu-precise' />
     <Group name='ubuntu' />
   </Group>
