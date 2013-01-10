@@ -1,5 +1,6 @@
 <Bundle name='bcfg2-server'>
   <Package name='bcfg2-server' />
+  <Package name='python-genshi' />
 
   <!-- Resolve dependency choices -->
   <Package name='libgd2-noxpm' />
