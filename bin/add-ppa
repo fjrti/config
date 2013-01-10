@@ -8,7 +8,12 @@ read -p "Paste a PPA url here: " ppa
 page=$(curl -s "$ppa")
 
 get_deb_line() {
-  echo "$page" | grep -A 1 "^$1 " | xargs echo | sed 's/<[^>]*>//g'
+  deb=$(echo "$page" | grep -A 1 "^$1 " | xargs echo | sed 's/<[^>]*>//g')
+  # Some PPAs are compatible with multiple Ubuntu versions. Let's target
+  # precise.
+  # TODO: We probably want to generate cheetah templates that substitute our
+  # version of Ubuntu in here
+  echo "$deb" | sed 's/YOUR_UBUNTU_VERSION_HERE/precise/'
 }
 
 shortname=$(get_deb_line "deb" | cut -d / -f 4,5 | tr / -)
