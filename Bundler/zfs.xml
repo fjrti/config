@@ -1,3 +1,6 @@
 <Bundle name='zfs'>
   <Package name='ubuntu-zfs' />
+
+  <Path name='/etc/apt/sources.list.d/zfs-native-stable.list' />
+  <Path name='/etc/apt/trusted.gpg.d/zfs-native-stable.gpg' />
 </Bundle>
