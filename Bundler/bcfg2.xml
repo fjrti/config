@@ -1,0 +1,9 @@
+<Bundle name='bcfg2'>
+  <Package name='bcfg2' />
+
+  <Path name='/etc/bcfg2.conf' />
+
+  <!-- Set up the PPA -->
+  <Path name='/etc/apt/sources.list.d/bcfg2-precisetesting.list' />
+  <Path name='/etc/apt/trusted.gpg.d/bcfg2-precisetesting.gpg' />
+</Bundle>
