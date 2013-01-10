@@ -8,6 +8,7 @@
   <Package name='ttf-dejavu-core' />
 
   <Path name='/etc/bcfg2.conf' />
+  <Path name='/etc/bcfg2-bootstrap.conf' />
 
   <Service name='bcfg2-server' />
 </Bundle>
