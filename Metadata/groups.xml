@@ -12,15 +12,18 @@
   </Group>
 
   <!-- HCS server groups -->
-  <Group name='config-server'>
+  <Group name='config-server' profile='true'>
     <Bundle name='bcfg2-server' />
+    <Group name='ubuntu-precise' />
   </Group>
-  <Group name='mail-server'>
+  <Group name='mail-server' profile='true'>
     <Bundle name='mail-server' />
     <Group name='homedirs' />
+    <Group name='ubuntu-precise' />
   </Group>
-  <Group name='file-server'>
+  <Group name='file-server' profile='true'>
     <Bundle name='zfs' />
+    <Group name='ubuntu-precise' />
   </Group>
 
   <!-- Utility groups -->
