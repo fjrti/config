@@ -7,5 +7,7 @@
   <Package name='python3.2' />
   <Package name='ttf-dejavu-core' />
 
+  <Path name='/etc/bcfg2.conf' />
+
   <Service name='bcfg2-server' />
 </Bundle>
