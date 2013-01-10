@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Import a PPA. Hacky as hell.
+
+root="$(dirname "$0")/.."
+
+read -p "Paste a PPA url here: " ppa
+page=$(curl -s "$ppa")
+
+get_deb_line() {
+  echo "$page" | grep -A 1 "^$1 " | xargs echo | sed 's/<[^>]*>//g'
+}
+
+shortname=$(get_deb_line "deb" | cut -d / -f 4,5 | tr / -)
+
+sources="$root/Cfg/etc/apt/sources.list.d/${shortname}.list/${shortname}.list"
+keyring="$root/Cfg/etc/apt/trusted.gpg.d/${shortname}.gpg/${shortname}.gpg"
+
+mkdir -p "$(dirname "$sources")" "$(dirname "$keyring")"
+
+get_deb_line "deb" > "$sources"
+get_deb_line "deb-src" >> "$sources"
+
+# Import the key
+
+keyid=$(echo "$page" | grep keyserver.ubuntu.com | cut -d'&' -f 1 | cut -dx -f 2)
+keyurl="http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=$keyid"
+curl -s "$keyurl" | gpg --no-default-keyring --keyring "$keyring" --import -
