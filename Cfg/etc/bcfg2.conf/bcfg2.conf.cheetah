@@ -1,0 +1,10 @@
+#set $bcfg2 = $self.metadata.Properties['bcfg2.xml'].xdata
+#import socket
+#set $ip = socket.gethostbyname(socket.gethostname())
+[communication]
+protocol = xmlrpc/ssl
+password = $bcfg2.find('CommunicationPassword').text
+ca = /etc/ssl/certs/config.pem
+
+[components]
+bcfg2 = https://$ip:6789

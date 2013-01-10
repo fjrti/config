@@ -14,7 +14,7 @@ key = /etc/ssl/private/config.key
 ca = /etc/ssl/certs/config.pem
 
 [components]
-bcfg2 = https://localhost:6789
+bcfg2 = https://config.hcs.harvard.edu:6789
 
 [encryption]
 config = $bcfg2.find('EncryptionPassword').text
