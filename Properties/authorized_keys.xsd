@@ -1,0 +1,54 @@
+<xsd:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+
+  <!-- SSH key types. Either ssh-rsa or ssh-dss -->
+  <xsd:simpleType name='KeyTypeEnum'>
+    <xsd:restriction base='xsd:string'>
+      <xsd:enumeration value='ssh-rsa' />
+      <xsd:enumeration value='ssh-dss' />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--
+    SSH Keys. Looks like this:
+    <Key type='ssh-rsa' host='my-computer'>
+      ... key data ...
+      (leave off the key type at the beginning and the comment at the end)
+    </Key>
+  -->
+  <xsd:complexType name='KeyType'>
+    <xsd:simpleContent>
+      <xsd:extension base='xs:string'>
+        <xsd:attribute name='host' type='xsd:string' use='required' />
+        <xsd:attribute name='type' type='KeyTypeEnum' default='ssh-rsa' />
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+  <!--
+    Users. Looks like this:
+    <User name='carl'>
+      <Key /> ...
+    </Key>
+  -->
+  <xsd:complexType name='UserType'>
+    <xsd:attribute name='name' type='xsd:string' use='required' />
+
+    <xsd:choice minOccurs='0' maxOccurs='unbounded'>
+      <xsd:element name='Key' type='KeyType' />
+    </xsd:choice>
+  </xsd:complexType>
+
+  <!--
+    AuthorizedKeys. Looks like this:
+    <AuthorizedKeys>
+      <User /> ...
+    </AuthorizedKeys>
+  -->
+  <xsd:element name='AuthorizedKeys'>
+    <xsd:complexType>
+      <xsd:choice minOccurs='0' maxOccurs='unbounded'>
+        <xsd:element name='User' type='UserType' />
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
