@@ -1,0 +1,55 @@
+<Rules priority='1'>
+  <POSIXGroup gid='0'   name='root' />
+  <POSIXGroup gid='1'   name='daemon' />
+  <POSIXGroup gid='2'   name='bin' />
+  <POSIXGroup gid='3'   name='sys' />
+  <POSIXGroup gid='4'   name='adm' />
+  <POSIXGroup gid='5'   name='tty' />
+  <POSIXGroup gid='6'   name='disk' />
+  <POSIXGroup gid='7'   name='lp' />
+  <POSIXGroup gid='8'   name='mail' />
+  <POSIXGroup gid='9'   name='news' />
+  <POSIXGroup gid='10'  name='uucp' />
+  <POSIXGroup gid='12'  name='man' />
+  <POSIXGroup gid='13'  name='proxy' />
+  <POSIXGroup gid='15'  name='kmem' />
+  <POSIXGroup gid='20'  name='dialout' />
+  <POSIXGroup gid='21'  name='fax' />
+  <POSIXGroup gid='22'  name='voice' />
+  <POSIXGroup gid='24'  name='cdrom' />
+  <POSIXGroup gid='25'  name='floppy' />
+  <POSIXGroup gid='26'  name='tape' />
+  <POSIXGroup gid='27'  name='sudo' />
+  <POSIXGroup gid='29'  name='audio' />
+  <POSIXGroup gid='30'  name='dip' />
+  <POSIXGroup gid='33'  name='www-data' />
+  <POSIXGroup gid='34'  name='backup' />
+  <POSIXGroup gid='37'  name='operator' />
+  <POSIXGroup gid='38'  name='list' />
+  <POSIXGroup gid='39'  name='irc' />
+  <POSIXGroup gid='40'  name='src' />
+  <POSIXGroup gid='41'  name='gnats' />
+  <POSIXGroup gid='42'  name='shadow' />
+  <POSIXGroup gid='43'  name='utmp' />
+  <POSIXGroup gid='44'  name='video' />
+  <POSIXGroup gid='45'  name='sasl' />
+  <POSIXGroup gid='46'  name='plugdev' />
+  <POSIXGroup gid='50'  name='staff' />
+  <POSIXGroup gid='60'  name='games' />
+  <POSIXGroup gid='100' name='users' />
+  <PosixGroup           name='libuuid' />
+  <PosixGroup           name='crontab' />
+  <PosixGroup           name='syslog' />
+  <PosixGroup           name='fuse' />
+  <PosixGroup           name='messagebus' />
+  <PosixGroup           name='whoopsie' />
+  <PosixGroup           name='mlocate' />
+  <PosixGroup           name='ssh' />
+  <PosixGroup           name='landscape' />
+  <PosixGroup           name='netdev' />
+  <PosixGroup           name='admin' />
+
+  <POSIXGroup gid='65534' name='nogroup' />
+
+  <PosixGroup gid='500' name='hcs' />
+</Rules>

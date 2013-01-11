@@ -1,0 +1,45 @@
+<Rules priority='1'>
+  <POSIXUser uid='0'  name='root'       home='/root'              shell='/bin/bash' />
+  <POSIXUser uid='1'  name='daemon'     home='/usr/sbin'          shell='/bin/sh' />
+  <POSIXUser uid='2'  name='bin'        home='/bin'               shell='/bin/sh' />
+  <POSIXUser uid='3'  name='sys'        home='/dev'               shell='/bin/sh' />
+  <POSIXUser uid='4'  name='sync'       home='/bin'               shell='/bin/sync' group='nogroup' />
+  <POSIXUser uid='5'  name='games'      home='/usr/games'         shell='/bin/sh' />
+  <POSIXUser uid='6'  name='man'        home='/var/cache/man'     shell='/bin/sh' />
+  <POSIXUser uid='7'  name='lp'         home='/var/spool/lpd'     shell='/bin/sh' />
+  <POSIXUser uid='8'  name='mail'       home='/var/mail'          shell='/bin/sh' />
+  <POSIXUser uid='9'  name='news'       home='/var/spool/news'    shell='/bin/sh' />
+  <POSIXUser uid='10' name='uucp'       home='/var/spool/uucp'    shell='/bin/sh' />
+  <POSIXUser uid='13' name='proxy'      home='/bin'               shell='/bin/sh' />
+  <POSIXUser uid='33' name='www-data'   home='/var/www'           shell='/bin/sh' />
+  <POSIXUser uid='34' name='backup'     home='/var/backups'       shell='/bin/sh' />
+  <POSIXUser uid='38' name='list'       home='/var/list'          shell='/bin/sh' gecos='Mailing List Manager' />
+  <POSIXUser uid='39' name='irc'        home='/var/run/ircd'      shell='/bin/sh' gecos='ircd' />
+  <POSIXUser uid='41' name='gnats'      home='/var/lib/gnats'     shell='/bin/sh' gecos='Gnats Bug-Reporting System (admin)' />
+
+  <!-- These users are allocated as part of various packages and don't have
+       well-known uid's. Their order is dependent on installation order and
+       shouldn't be hardcoded -->
+  <POSIXUser          name='libuuid'    home='/var/lib/libuuid'   shell='/bin/sh' />
+  <POSIXUser          name='syslog'     home='/home/syslog'       shell='/bin/false' gecos='' />
+  <POSIXUser          name='messagebus' home='/var/run/dbus'      shell='/bin/false' gecos='' />
+  <POSIXUser          name='whoopsie'   home='/nonexistent'       shell='/bin/false' gecos='' />
+  <POSIXUser          name='landscape'  home='/var/lib/landscape' shell='/bin/false' gecos='' />
+  <POSIXUser          name='sshd'       home='/var/run/sshd'      shell='/usr/sbin/nologin' gecos='' />
+
+  <POSIXUser uid='65534' name='nobody' home='/nonexistent' shell='/bin/sh' group='nogroup' />
+
+  <POSIXUser uid='500' name='hcs' home='/local/hcs' shell='/bin/bash' gecos='Harvard Computer Society'>
+    <MemberOf>adm</MemberOut>
+    <MemberOf>admin</MemberOut>
+    <MemberOf>audio</MemberOut>
+    <MemberOf>cdrom</MemberOut>
+    <MemberOf>dialout</MemberOut>
+    <MemberOf>dip</MemberOut>
+    <MemberOf>floppy</MemberOut>
+    <MemberOf>netdev</MemberOut>
+    <MemberOf>plugdev</MemberOut>
+    <MemberOf>video</MemberOut>
+  </POSIXUser>
+
+</Rules>
