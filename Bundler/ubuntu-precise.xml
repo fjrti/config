@@ -30,7 +30,6 @@
   <Service name='acpid' />
   <Service name='apport' />
   <Service name='atd' />
-  <Service name='bcfg2' />
   <Service name='cloud-config' />
   <Service name='cloud-final' />
   <Service name='cloud-init' />
