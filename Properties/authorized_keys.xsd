@@ -31,11 +31,11 @@
     </Key>
   -->
   <xsd:complexType name='UserType'>
-    <xsd:attribute name='name' type='xsd:string' use='required' />
-
     <xsd:choice minOccurs='0' maxOccurs='unbounded'>
       <xsd:element name='Key' type='KeyType' />
     </xsd:choice>
+
+    <xsd:attribute name='name' type='xsd:string' use='required' />
   </xsd:complexType>
 
   <!--
