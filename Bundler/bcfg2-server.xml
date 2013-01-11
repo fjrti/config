@@ -11,5 +11,5 @@
   <Path name='/etc/bcfg2.conf' />
   <Path name='/etc/bcfg2-bootstrap.conf' />
 
-  <Service name='bcfg2-server' type='deb' status='on' />
+  <BoundService name='bcfg2-server' type='deb' status='on' />
 </Bundle>
