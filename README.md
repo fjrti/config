@@ -56,3 +56,22 @@ can be found either on the configuration servers themselves, or stored as
 `bcfg2-crypt-key` in the secrets repository.
 
 [encrypt]: http://docs.bcfg2.org/dev/server/plugins/generators/cfg.html#encrypted-files
+
+Bootstrapping
+-------------
+
+This repository contains a bootstrapping script (`bin/bootstrap`) which allows
+you to set up a new Bcfg2 server by bootstrapping against itself (INCEPTION!!).
+It does this by writing out temporary configuration files, and decrypting enough
+of itself to allow Bcfg2 do the rest. As you change the configuration
+repository, please try to be mindful of the bootstrapping process, since it is
+important that we be able to start up new configuration servers without
+depending on old ones.
+
+Bootstrapping other servers using an existing configuration server is much
+easier. The choice of configuration server is "sticky"--once a server is
+configured to use a given Bcfg2 server, it will continue to use it until told
+otherwise. This makes it delightfully simple to test out new configuration:
+simply spin up a new server, check out a different version of this repository,
+and point the necessary servers at the testing config server by editing the IP
+address in `/etc/bcfg2.conf`.
