@@ -155,55 +155,57 @@
     <MemberOf>video</MemberOf>
   </BoundPOSIXUser>
 
-  <POSIXGroup name='root' />
-  <POSIXGroup name='daemon' />
-  <POSIXGroup name='bin' />
-  <POSIXGroup name='sys' />
-  <POSIXGroup name='adm' />
-  <POSIXGroup name='tty' />
-  <POSIXGroup name='disk' />
-  <POSIXGroup name='lp' />
-  <POSIXGroup name='mail' />
-  <POSIXGroup name='news' />
-  <POSIXGroup name='uucp' />
-  <POSIXGroup name='man' />
-  <POSIXGroup name='proxy' />
-  <POSIXGroup name='kmem' />
-  <POSIXGroup name='dialout' />
-  <POSIXGroup name='fax' />
-  <POSIXGroup name='voice' />
-  <POSIXGroup name='cdrom' />
-  <POSIXGroup name='floppy' />
-  <POSIXGroup name='tape' />
-  <POSIXGroup name='sudo' />
-  <POSIXGroup name='audio' />
-  <POSIXGroup name='dip' />
-  <POSIXGroup name='www-data' />
-  <POSIXGroup name='backup' />
-  <POSIXGroup name='operator' />
-  <POSIXGroup name='list' />
-  <POSIXGroup name='irc' />
-  <POSIXGroup name='src' />
-  <POSIXGroup name='gnats' />
-  <POSIXGroup name='shadow' />
-  <POSIXGroup name='utmp' />
-  <POSIXGroup name='video' />
-  <POSIXGroup name='sasl' />
-  <POSIXGroup name='plugdev' />
-  <POSIXGroup name='staff' />
-  <POSIXGroup name='games' />
-  <POSIXGroup name='users' />
-  <POSIXGroup name='libuuid' />
-  <POSIXGroup name='crontab' />
-  <POSIXGroup name='syslog' />
-  <POSIXGroup name='fuse' />
-  <POSIXGroup name='messagebus' />
-  <POSIXGroup name='whoopsie' />
-  <POSIXGroup name='mlocate' />
-  <POSIXGroup name='ssh' />
-  <POSIXGroup name='landscape' />
-  <POSIXGroup name='netdev' />
-  <POSIXGroup name='admin' />
-  <POSIXGroup name='nogroup' />
-  <POSIXGroup name='hcs' />
+  <BoundPOSIXGroup gid='0'   name='root' />
+  <BoundPOSIXGroup gid='1'   name='daemon' />
+  <BoundPOSIXGroup gid='2'   name='bin' />
+  <BoundPOSIXGroup gid='3'   name='sys' />
+  <BoundPOSIXGroup gid='4'   name='adm' />
+  <BoundPOSIXGroup gid='5'   name='tty' />
+  <BoundPOSIXGroup gid='6'   name='disk' />
+  <BoundPOSIXGroup gid='7'   name='lp' />
+  <BoundPOSIXGroup gid='8'   name='mail' />
+  <BoundPOSIXGroup gid='9'   name='news' />
+  <BoundPOSIXGroup gid='10'  name='uucp' />
+  <BoundPOSIXGroup gid='12'  name='man' />
+  <BoundPOSIXGroup gid='13'  name='proxy' />
+  <BoundPOSIXGroup gid='15'  name='kmem' />
+  <BoundPOSIXGroup gid='20'  name='dialout' />
+  <BoundPOSIXGroup gid='21'  name='fax' />
+  <BoundPOSIXGroup gid='22'  name='voice' />
+  <BoundPOSIXGroup gid='24'  name='cdrom' />
+  <BoundPOSIXGroup gid='25'  name='floppy' />
+  <BoundPOSIXGroup gid='26'  name='tape' />
+  <BoundPOSIXGroup gid='27'  name='sudo' />
+  <BoundPOSIXGroup gid='29'  name='audio' />
+  <BoundPOSIXGroup gid='30'  name='dip' />
+  <BoundPOSIXGroup gid='33'  name='www-data' />
+  <BoundPOSIXGroup gid='34'  name='backup' />
+  <BoundPOSIXGroup gid='37'  name='operator' />
+  <BoundPOSIXGroup gid='38'  name='list' />
+  <BoundPOSIXGroup gid='39'  name='irc' />
+  <BoundPOSIXGroup gid='40'  name='src' />
+  <BoundPOSIXGroup gid='41'  name='gnats' />
+  <BoundPOSIXGroup gid='42'  name='shadow' />
+  <BoundPOSIXGroup gid='43'  name='utmp' />
+  <BoundPOSIXGroup gid='44'  name='video' />
+  <BoundPOSIXGroup gid='45'  name='sasl' />
+  <BoundPOSIXGroup gid='46'  name='plugdev' />
+  <BoundPOSIXGroup gid='50'  name='staff' />
+  <BoundPOSIXGroup gid='60'  name='games' />
+  <BoundPOSIXGroup gid='100' name='users' />
+  <BoundPOSIXGroup           name='libuuid' />
+  <BoundPOSIXGroup           name='crontab' />
+  <BoundPOSIXGroup           name='syslog' />
+  <BoundPOSIXGroup           name='fuse' />
+  <BoundPOSIXGroup           name='messagebus' />
+  <BoundPOSIXGroup           name='whoopsie' />
+  <BoundPOSIXGroup           name='mlocate' />
+  <BoundPOSIXGroup           name='ssh' />
+  <BoundPOSIXGroup           name='landscape' />
+  <BoundPOSIXGroup           name='netdev' />
+  <BoundPOSIXGroup           name='admin' />
+
+  <BoundPOSIXGroup gid='65534' name='nogroup' />
+
+  <BoundPOSIXGroup gid='500' name='hcs' />
 </Bundle>
