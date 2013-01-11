@@ -8,6 +8,7 @@
   <Package name='htop' />
   <Package name='iftop' />
   <Package name='iotop' />
+  <Package name='mtr' />
   <Package name='screen' />
   <Package name='tmux' />
   <Package name='traceroute' />
