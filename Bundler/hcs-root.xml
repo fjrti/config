@@ -9,6 +9,9 @@
   <Path name='/local/hcs/.screenrc' />
   <Path name='/local/hcs/.vimrc' />
 
+  <BoundPath name='/etc/sudoers.d' type='directory' owner='root' mode='755' />
+  <Path name='/etc/sudoers.d/50-hcs' />
+
   <BoundPOSIXUser uid='500' name='hcs' home='/local/hcs' shell='/bin/bash' gecos='Harvard Computer Society'>
     <MemberOf>adm</MemberOf>
     <MemberOf>admin</MemberOf>

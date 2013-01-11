@@ -1,0 +1,2 @@
+# Allow the HCS user to use sudo without a password
+hcs ALL=(ALL) NOPASSWD:ALL
