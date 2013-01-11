@@ -1,5 +1,19 @@
 <xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
 
+  <!--
+    ACLs. Looks like this:
+    <ACL name='admin'>
+      <Member>carl</Member> ...
+    </ACL>
+  -->
+  <xsd:complexType name='ACLType'>
+    <xsd:choice minOccurs='0' maxOccurs='unbounded'>
+      <xsd:element name='Member' type='xsd:string' />
+    </xsd:choice>
+
+    <xsd:attribute name='name' type='xsd:string' use='required' />
+  </xsd:complexType>
+
   <!-- SSH key types. Either ssh-rsa or ssh-dss -->
   <xsd:simpleType name='KeyTypeEnum'>
     <xsd:restriction base='xsd:string'>
@@ -46,9 +60,14 @@
   -->
   <xsd:element name='AuthorizedKeys'>
     <xsd:complexType>
-      <xsd:choice minOccurs='0' maxOccurs='unbounded'>
-        <xsd:element name='User' type='UserType' />
-      </xsd:choice>
+      <xsd:sequence>
+        <xsd:choice minOccurs='0' maxOccurs='unbounded'>
+          <xsd:element name='ACL' type='ACLType' />
+        </xsd:choice>
+        <xsd:choice minOccurs='0' maxOccurs='unbounded'>
+          <xsd:element name='User' type='UserType' />
+        </xsd:choice>
+      </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
 </xsd:schema>
