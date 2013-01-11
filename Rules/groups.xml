@@ -37,19 +37,19 @@
   <POSIXGroup gid='50'  name='staff' />
   <POSIXGroup gid='60'  name='games' />
   <POSIXGroup gid='100' name='users' />
-  <PosixGroup           name='libuuid' />
-  <PosixGroup           name='crontab' />
-  <PosixGroup           name='syslog' />
-  <PosixGroup           name='fuse' />
-  <PosixGroup           name='messagebus' />
-  <PosixGroup           name='whoopsie' />
-  <PosixGroup           name='mlocate' />
-  <PosixGroup           name='ssh' />
-  <PosixGroup           name='landscape' />
-  <PosixGroup           name='netdev' />
-  <PosixGroup           name='admin' />
+  <POSIXGroup           name='libuuid' />
+  <POSIXGroup           name='crontab' />
+  <POSIXGroup           name='syslog' />
+  <POSIXGroup           name='fuse' />
+  <POSIXGroup           name='messagebus' />
+  <POSIXGroup           name='whoopsie' />
+  <POSIXGroup           name='mlocate' />
+  <POSIXGroup           name='ssh' />
+  <POSIXGroup           name='landscape' />
+  <POSIXGroup           name='netdev' />
+  <POSIXGroup           name='admin' />
 
   <POSIXGroup gid='65534' name='nogroup' />
 
-  <PosixGroup gid='500' name='hcs' />
+  <POSIXGroup gid='500' name='hcs' />
 </Rules>
