@@ -30,16 +30,16 @@
   <POSIXUser uid='65534' name='nobody' home='/nonexistent' shell='/bin/sh' group='nogroup' />
 
   <POSIXUser uid='500' name='hcs' home='/local/hcs' shell='/bin/bash' gecos='Harvard Computer Society'>
-    <MemberOf>adm</MemberOut>
-    <MemberOf>admin</MemberOut>
-    <MemberOf>audio</MemberOut>
-    <MemberOf>cdrom</MemberOut>
-    <MemberOf>dialout</MemberOut>
-    <MemberOf>dip</MemberOut>
-    <MemberOf>floppy</MemberOut>
-    <MemberOf>netdev</MemberOut>
-    <MemberOf>plugdev</MemberOut>
-    <MemberOf>video</MemberOut>
+    <MemberOf>adm</MemberOf>
+    <MemberOf>admin</MemberOf>
+    <MemberOf>audio</MemberOf>
+    <MemberOf>cdrom</MemberOf>
+    <MemberOf>dialout</MemberOf>
+    <MemberOf>dip</MemberOf>
+    <MemberOf>floppy</MemberOf>
+    <MemberOf>netdev</MemberOf>
+    <MemberOf>plugdev</MemberOf>
+    <MemberOf>video</MemberOf>
   </POSIXUser>
 
 </Rules>
