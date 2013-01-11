@@ -1,5 +1,5 @@
 <Clients version="3.0">
   <!-- Config servers always refer to themselves as config.hcs.harvard.edu over
        their loopback interface for bootstrapping -->
-  <Client name="config.hcs.harvard.edu" profile="basic" address="127.0.0.1" uuid="config.hcs.harvard.edu" />
+  <Client name="config.hcs.harvard.edu" profile="config-server" address="127.0.0.1" uuid="config.hcs.harvard.edu" />
 </Clients>
