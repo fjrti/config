@@ -2,5 +2,5 @@
   <Package name='linux-virtual' />
 
   <!-- Never delete the currently running kernel -->
-  <Package name="${metadata.Probes['kernel']}" />
+  <Package name="linux-image-${metadata.Probes['kernel']}" />
 </Bundle>
