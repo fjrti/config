@@ -1,0 +1,26 @@
+<Bundle name='hcs-root'>
+  <Path name='/root/.gitconfig' />
+  <Path name='/root/.screenrc' />
+  <Path name='/root/.vimrc' />
+
+  <BoundPath name='/local' type='directory' owner='root' group='root' mode='755' />
+  <BoundPath name='/local/hcs' type='directory' owner='hcs' group='hcs' mode='755' />
+  <Path name='/local/hcs/.gitconfig' />
+  <Path name='/local/hcs/.screenrc' />
+  <Path name='/local/hcs/.vimrc' />
+
+  <BoundPOSIXUser uid='500' name='hcs' home='/local/hcs' shell='/bin/bash' gecos='Harvard Computer Society'>
+    <MemberOf>adm</MemberOf>
+    <MemberOf>admin</MemberOf>
+    <MemberOf>audio</MemberOf>
+    <MemberOf>cdrom</MemberOf>
+    <MemberOf>dialout</MemberOf>
+    <MemberOf>dip</MemberOf>
+    <MemberOf>floppy</MemberOf>
+    <MemberOf>netdev</MemberOf>
+    <MemberOf>plugdev</MemberOf>
+    <MemberOf>video</MemberOf>
+  </BoundPOSIXUser>
+
+  <BoundPOSIXGroup gid='500' name='hcs' />
+</Bundle>

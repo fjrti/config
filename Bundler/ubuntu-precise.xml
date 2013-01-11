@@ -142,19 +142,6 @@
 
   <BoundPOSIXUser uid='65534' name='nobody' home='/nonexistent' shell='/bin/sh' group='nogroup' />
 
-  <BoundPOSIXUser uid='500' name='hcs' home='/local/hcs' shell='/bin/bash' gecos='Harvard Computer Society'>
-    <MemberOf>adm</MemberOf>
-    <MemberOf>admin</MemberOf>
-    <MemberOf>audio</MemberOf>
-    <MemberOf>cdrom</MemberOf>
-    <MemberOf>dialout</MemberOf>
-    <MemberOf>dip</MemberOf>
-    <MemberOf>floppy</MemberOf>
-    <MemberOf>netdev</MemberOf>
-    <MemberOf>plugdev</MemberOf>
-    <MemberOf>video</MemberOf>
-  </BoundPOSIXUser>
-
   <BoundPOSIXGroup gid='0'   name='root' />
   <BoundPOSIXGroup gid='1'   name='daemon' />
   <BoundPOSIXGroup gid='2'   name='bin' />
@@ -206,6 +193,4 @@
   <BoundPOSIXGroup           name='admin' />
 
   <BoundPOSIXGroup gid='65534' name='nogroup' />
-
-  <BoundPOSIXGroup gid='500' name='hcs' />
 </Bundle>

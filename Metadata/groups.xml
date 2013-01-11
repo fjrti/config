@@ -5,12 +5,12 @@
   <Group name='ubuntu-precise'>
     <Bundle name='kernel' />
     <Bundle name='ubuntu-precise' />
-    <Bundle name='bcfg2' />
     <Group name='ubuntu' />
   </Group>
   <Group name='ubuntu'>
-    <Bundle name='root-dotfiles' />
+    <Bundle name='hcs-root' />
     <Bundle name='hcs-sysadmin' />
+    <Bundle name='bcfg2' />
   </Group>
 
   <!-- HCS server groups -->
