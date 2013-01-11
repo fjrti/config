@@ -1,4 +1,5 @@
 <Bundle name='hcs-root'>
+  <BoundPath name='/root' type='permissions' owner='root' group='root' mode='700' />
   <Path name='/root/.gitconfig' />
   <Path name='/root/.screenrc' />
   <Path name='/root/.vimrc' />
@@ -9,7 +10,7 @@
   <Path name='/local/hcs/.screenrc' />
   <Path name='/local/hcs/.vimrc' />
 
-  <BoundPath name='/etc/sudoers.d' type='directory' owner='root' group='root' mode='755' />
+  <BoundPath name='/etc/sudoers.d' type='permissions' owner='root' group='root' mode='755' />
   <Path name='/etc/sudoers.d/50-hcs' />
 
   <BoundPOSIXUser uid='500' name='hcs' home='/local/hcs' shell='/bin/bash' gecos='Harvard Computer Society'>
