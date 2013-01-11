@@ -13,8 +13,8 @@
   <Service name='statd' />
   <Service name='statd-mounting' />
 
-  <BoundPath name='/nfs' type='directory' owner='root' group='root' perms='755' />
-  <BoundPath name='/nfs/home' type='directory' owner='root' group='root' perms='755' />
+  <BoundPath name='/nfs' type='directory' owner='root' group='root' mode='755' />
+  <BoundPath name='/nfs/home' type='directory' owner='root' group='root' mode='755' />
   <Path name='/etc/auto.master' />
   <Path name='/etc/autofs/nfs.people' />
   <Path name='/etc/autofs/nfs.groups' />
