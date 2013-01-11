@@ -21,5 +21,6 @@
   <Path name='/etc/postfix/transport' />
   <Path name='/etc/procmailrc' />
 
-  <Action name='postmap-transport-table' />
+  <BoundAction name='postmap-transport-table' timing='post' when='modified'
+    command='postmap /etc/postfix/transport' status='ignore' />
 </Bundle>
