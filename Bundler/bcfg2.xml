@@ -7,5 +7,5 @@
   <Path name='/etc/apt/sources.list.d/bcfg2-precisetesting.list' />
   <Path name='/etc/apt/trusted.gpg.d/bcfg2-precisetesting.gpg' />
 
-  <Service name='bcfg2' />
+  <BoundService name='bcfg2' type='deb' status='on' />
 </Bundle>

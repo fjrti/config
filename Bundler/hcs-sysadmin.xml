@@ -13,5 +13,5 @@
   <Package name='traceroute' />
   <Package name='vim' />
 
-  <Service name='screen-cleanup' />
+  <BoundService name='screen-cleanup' type='upstart' status='off' />
 </Bundle>

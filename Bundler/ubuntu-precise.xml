@@ -27,87 +27,90 @@
   <Package name='grub-legacy-ec2' />
 
   <!-- Services -->
-  <Service name='acpid' />
-  <Service name='apport' />
-  <Service name='atd' />
-  <Service name='cloud-config' />
-  <Service name='cloud-final' />
-  <Service name='cloud-init' />
-  <Service name='cloud-init-local' />
-  <Service name='cloud-init-nonet' />
-  <Service name='console' />
-  <Service name='console-setup' />
-  <Service name='container-detect' />
-  <Service name='control-alt-delete' />
-  <Service name='cron' />
-  <Service name='cryptdisks-enable' />
-  <Service name='cryptdisks-udev' />
-  <Service name='dbus' />
-  <Service name='dmesg' />
-  <Service name='dns-clean' />
-  <Service name='failsafe' />
-  <Service name='flush-early-job-log' />
-  <Service name='friendly-recovery' />
-  <Service name='grub-common' />
-  <Service name='hostname' />
-  <Service name='hwclock' />
-  <Service name='hwclock-save' />
-  <Service name='irqbalance' />
-  <Service name='killprocs' />
-  <Service name='landscape-client' />
-  <Service name='module-init-tools' />
-  <Service name='mountall' />
-  <Service name='mountall-net' />
-  <Service name='mountall-reboot' />
-  <Service name='mountall-shell' />
-  <Service name='mounted-debugfs' />
-  <Service name='mounted-dev' />
-  <Service name='mounted-proc' />
-  <Service name='mounted-run' />
-  <Service name='mounted-tmp' />
-  <Service name='mounted-var' />
-  <Service name='network-interface' />
-  <Service name='network-interface-container' />
-  <Service name='network-interface-security' />
-  <Service name='networking' />
-  <Service name='ondemand' />
-  <Service name='passwd' />
-  <Service name='plymouth' />
-  <Service name='plymouth-log' />
-  <Service name='plymouth-splash' />
-  <Service name='plymouth-stop' />
-  <Service name='plymouth-upstart-bridge' />
-  <Service name='pppd-dns' />
-  <Service name='procps' />
-  <Service name='rc' />
-  <Service name='rc-sysinit' />
-  <Service name='rc.local' />
-  <Service name='rcS' />
-  <Service name='resolvconf' />
-  <Service name='rsync' />
-  <Service name='rsyslog' />
-  <Service name='setvtrgb' />
-  <Service name='shutdown' />
-  <Service name='single' />
-  <Service name='ssh' />
-  <Service name='sudo' />
-  <Service name='tty1' />
-  <Service name='tty2' />
-  <Service name='tty3' />
-  <Service name='tty4' />
-  <Service name='tty5' />
-  <Service name='tty6' />
-  <Service name='udev' />
-  <Service name='udev-fallback-graphics' />
-  <Service name='udev-finish' />
-  <Service name='udevmonitor' />
-  <Service name='udevtrigger' />
-  <Service name='ufw' />
-  <Service name='upstart-socket-bridge' />
-  <Service name='upstart-udev-bridge' />
-  <Service name='ureadahead-other' />
-  <Service name='wait-for-state' />
-  <Service name='whoopsie' />
+  <BoundService name='acpid'                       type='upstart'  status='on'     />
+  <BoundService name='apport'                      type='upstart'  status='on'     />
+  <BoundService name='atd'                         type='upstart'  status='on'     />
+  <BoundService name='cloud-config'                type='upstart'  status='off'    />
+  <BoundService name='cloud-final'                 type='upstart'  status='off'    />
+  <BoundService name='cloud-init'                  type='upstart'  status='off'    />
+  <BoundService name='cloud-init-local'            type='upstart'  status='off'    />
+  <BoundService name='cloud-init-nonet'            type='upstart'  status='off'    />
+  <BoundService name='console'                     type='upstart'  status='off'    />
+  <BoundService name='console-setup'               type='upstart'  status='off'    />
+  <BoundService name='container-detect'            type='upstart'  status='off'    />
+  <BoundService name='control-alt-delete'          type='upstart'  status='off'    />
+  <BoundService name='cron'                        type='upstart'  status='on'     />
+  <BoundService name='cryptdisks-enable'           type='upstart'  status='off'    />
+  <BoundService name='cryptdisks-udev'             type='upstart'  status='ignore' />
+  <BoundService name='dbus'                        type='upstart'  status='on'     />
+  <BoundService name='dmesg'                       type='upstart'  status='off'    />
+  <BoundService name='dns-clean'                   type='deb'      status='on'     />
+  <BoundService name='failsafe'                    type='upstart'  status='off'    />
+  <BoundService name='flush-early-job-log'         type='upstart'  status='off'    />
+  <BoundService name='friendly-recovery'           type='upstart'  status='off'    />
+  <BoundService name='grub-common'                 type='deb'      status='on'     />
+  <BoundService name='hostname'                    type='upstart'  status='off'    />
+  <BoundService name='hwclock'                     type='upstart'  status='off'    />
+  <BoundService name='hwclock-save'                type='upstart'  status='off'    />
+  <BoundService name='irqbalance'                  type='upstart'  status='off'    />
+  <BoundService name='killprocs'                   type='deb'      status='on'     />
+  <BoundService name='landscape-client'            type='deb'      status='on'     />
+  <BoundService name='module-init-tools'           type='upstart'  status='off'    />
+  <BoundService name='mountall'                    type='upstart'  status='off'    />
+  <BoundService name='mountall-net'                type='upstart'  status='off'    />
+  <BoundService name='mountall-reboot'             type='upstart'  status='off'    />
+  <BoundService name='mountall-shell'              type='upstart'  status='off'    />
+  <BoundService name='mounted-debugfs'             type='upstart'  status='off'    />
+  <BoundService name='mounted-dev'                 type='upstart'  status='off'    />
+  <BoundService name='mounted-proc'                type='upstart'  status='off'    />
+  <BoundService name='mounted-run'                 type='upstart'  status='off'    />
+  <BoundService name='mounted-tmp'                 type='upstart'  status='off'    />
+  <BoundService name='mounted-var'                 type='upstart'  status='off'    />
+  <BoundService name='network-interface'           type='upstart'  status='on' parameters='INTERFACE=eth0' />
+  <BoundService name='network-interface'           type='upstart'  status='on' parameters='INTERFACE=lo' />
+  <BoundService name='network-interface-container' type='upstart'  status='off'    />
+  <BoundService name='network-interface-security'  type='upstart'  status='on' parameters='JOB=network-interface INTERFACE=eth0' />
+  <BoundService name='network-interface-security'  type='upstart'  status='on' parameters='JOB=network-interface INTERFACE=lo' />
+  <BoundService name='network-interface-security'  type='upstart'  status='on' parameters='JOB=networking' />
+  <BoundService name='networking'                  type='upstart'  status='off'    />
+  <BoundService name='ondemand'                    type='deb'      status='on'     />
+  <BoundService name='passwd'                      type='upstart'  status='off'    />
+  <BoundService name='plymouth'                    type='upstart'  status='off'    />
+  <BoundService name='plymouth-log'                type='upstart'  status='off'    />
+  <BoundService name='plymouth-splash'             type='upstart'  status='off'    />
+  <BoundService name='plymouth-stop'               type='upstart'  status='off'    />
+  <BoundService name='plymouth-upstart-bridge'     type='upstart'  status='off'    />
+  <BoundService name='pppd-dns'                    type='deb'      status='on'     />
+  <BoundService name='procps'                      type='upstart'  status='off'    />
+  <BoundService name='rc'                          type='upstart'  status='off'    />
+  <BoundService name='rc-sysinit'                  type='upstart'  status='off'    />
+  <BoundService name='rc.local'                    type='deb'      status='on'     />
+  <BoundService name='rcS'                         type='upstart'  status='off'    />
+  <BoundService name='resolvconf'                  type='upstart'  status='on'     />
+  <BoundService name='rsync'                       type='deb'      status='on'     />
+  <BoundService name='rsyslog'                     type='upstart'  status='on'     />
+  <BoundService name='setvtrgb'                    type='upstart'  status='off'    />
+  <BoundService name='shutdown'                    type='upstart'  status='off'    />
+  <BoundService name='single'                      type='deb'      status='on'     />
+  <BoundService name='ssh'                         type='upstart'  status='on'     />
+  <BoundService name='sudo'                        type='deb'      status='on'     />
+  <BoundService name='tty1'                        type='upstart'  status='on'     />
+  <BoundService name='tty2'                        type='upstart'  status='on'     />
+  <BoundService name='tty3'                        type='upstart'  status='on'     />
+  <BoundService name='tty4'                        type='upstart'  status='on'     />
+  <BoundService name='tty5'                        type='upstart'  status='on'     />
+  <BoundService name='tty6'                        type='upstart'  status='on'     />
+  <BoundService name='udev'                        type='upstart'  status='on'     />
+  <BoundService name='udev-fallback-graphics'      type='upstart'  status='off'    />
+  <BoundService name='udev-finish'                 type='upstart'  status='off'    />
+  <BoundService name='udevmonitor'                 type='upstart'  status='off'    />
+  <BoundService name='udevtrigger'                 type='upstart'  status='off'    />
+  <BoundService name='ufw'                         type='upstart'  status='on'     />
+  <BoundService name='upstart-socket-bridge'       type='upstart'  status='on'     />
+  <BoundService name='upstart-udev-bridge'         type='upstart'  status='on'     />
+  <BoundService name='ureadahead-other'            type='upstart'  status='off'    />
+  <BoundService name='wait-for-state'              type='upstart'  status='ignore' />
+  <BoundService name='whoopsie'                    type='upstart'  status='on'     />
 
   <POSIXUser name='root' />
   <POSIXUser name='daemon' />
