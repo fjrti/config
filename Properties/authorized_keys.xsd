@@ -1,4 +1,4 @@
-<xsd:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
 
   <!-- SSH key types. Either ssh-rsa or ssh-dss -->
   <xsd:simpleType name='KeyTypeEnum'>
