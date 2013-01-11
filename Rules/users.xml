@@ -20,12 +20,12 @@
   <!-- These users are allocated as part of various packages and don't have
        well-known uid's. Their order is dependent on installation order and
        shouldn't be hardcoded -->
-  <POSIXUser          name='libuuid'    home='/var/lib/libuuid'   shell='/bin/sh' />
+  <POSIXUser          name='libuuid'    home='/var/lib/libuuid'   shell='/bin/sh'    gecos='' />
   <POSIXUser          name='syslog'     home='/home/syslog'       shell='/bin/false' gecos='' />
   <POSIXUser          name='messagebus' home='/var/run/dbus'      shell='/bin/false' gecos='' />
   <POSIXUser          name='whoopsie'   home='/nonexistent'       shell='/bin/false' gecos='' />
   <POSIXUser          name='landscape'  home='/var/lib/landscape' shell='/bin/false' gecos='' />
-  <POSIXUser          name='sshd'       home='/var/run/sshd'      shell='/usr/sbin/nologin' gecos='' />
+  <POSIXUser          name='sshd'       home='/var/run/sshd'      shell='/usr/sbin/nologin' gecos='' group='nogroup' />
 
   <POSIXUser uid='65534' name='nobody' home='/nonexistent' shell='/bin/sh' group='nogroup' />
 
