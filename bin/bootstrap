@@ -37,7 +37,7 @@ key = /etc/ssl/private/config.key
 ca = /etc/ssl/certs/config.pem
 
 [components]
-bcfg2 = https://localhost:6789
+bcfg2 = https://config.hcs.harvard.edu:6789
 
 [encryption]
 config = $key
@@ -51,7 +51,7 @@ ca = /etc/ssl/certs/config.pem
 user = config.hcs.harvard.edu
 
 [components]
-bcfg2 = https://localhost:6789
+bcfg2 = https://config.hcs.harvard.edu:6789
 EOF
 
 # Copy the cert and key over
