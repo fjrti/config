@@ -3,6 +3,8 @@
   <Path name='/root/.gitconfig' />
   <Path name='/root/.screenrc' />
   <Path name='/root/.vimrc' />
+  <BoundPath name='/root/.ssh' type='directory' owner='root' group='root' mode='700' />
+  <Path name='/root/.ssh/authorized_keys' />
 
   <BoundPath name='/local' type='directory' owner='root' group='root' mode='755' />
   <BoundPath name='/local/hcs' type='directory' owner='hcs' group='hcs' mode='755' />
