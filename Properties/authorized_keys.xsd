@@ -17,7 +17,7 @@
   -->
   <xsd:complexType name='KeyType'>
     <xsd:simpleContent>
-      <xsd:extension base='xs:string'>
+      <xsd:extension base='xsd:string'>
         <xsd:attribute name='host' type='xsd:string' use='required' />
         <xsd:attribute name='type' type='KeyTypeEnum' default='ssh-rsa' />
       </xsd:extension>
