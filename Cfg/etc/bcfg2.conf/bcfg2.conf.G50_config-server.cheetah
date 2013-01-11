@@ -1,7 +1,7 @@
 #set $bcfg2 = $self.metadata.Properties['bcfg2.xml'].xdata
 [server]
 repository = /var/lib/bcfg2
-plugins = Bundler,Cfg,Metadata,Packages,Probes,Properties,Rules
+plugins = Bundler,Cfg,Metadata,Packages,Probes,Properties
 
 [database]
 engine = sqlite3

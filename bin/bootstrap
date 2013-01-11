@@ -24,7 +24,7 @@ cat > /etc/bcfg2.conf <<EOF
 # Created by hcs/config:bin/bootstrap
 [server]
 repository = /var/lib/bcfg2
-plugins = Bundler,Cfg,Metadata,Packages,Probes,Properties,Rules
+plugins = Bundler,Cfg,Metadata,Packages,Probes,Properties
 
 [database]
 engine = sqlite3
