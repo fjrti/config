@@ -1,4 +1,4 @@
-<Bundle name='ldap-cient'>
+<Bundle name='ldap-client'>
   <Package name='ldap-auth-client' />
   <Package name='nscd' />
 

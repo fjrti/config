@@ -1,4 +1,4 @@
-<Bundle name='ubuntu-lucid'>
+<Bundle name='ubuntu-precise'>
   <Package name='ubuntu-minimal' />
   <Package name='ubuntu-standard' />
   <Package name='linux-virtual' />
