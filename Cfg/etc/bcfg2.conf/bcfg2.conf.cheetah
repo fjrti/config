@@ -5,6 +5,7 @@
 protocol = xmlrpc/ssl
 password = $bcfg2.find('CommunicationPassword').text
 ca = /etc/ssl/certs/config.pem
+user = $self.metadata.Hostname
 
 [components]
 bcfg2 = https://$ip:6789

@@ -6,6 +6,7 @@
 protocol = xmlrpc/ssl
 password = $bcfg2.find('CommunicationPassword').text
 ca = /etc/ssl/certs/config.pem
+user = config.hcs.harvard.edu
 
 [components]
 bcfg2 = https://config.hcs.harvard.edu:6789
