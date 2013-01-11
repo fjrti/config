@@ -274,5 +274,6 @@ tls_cacertfile /etc/ssl/certs/hcs-ca.pem
 \# at present and does not support password policy control
 \#pam_sasl_mech DIGEST-MD5
 
-#set $users = $self.metadata.Probes["local_users"].replace("\n", ",")
-nss_initgroups_ignoreusers $users
+##set $users = $self.metadata.Probes["local_users"].replace("\n", ",")
+##nss_initgroups_ignoreusers $users
+nss_initgroups_minimum_uid 1000

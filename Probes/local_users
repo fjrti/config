@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# Extract a list of local users from /etc/passwd
-cut -d : -f 1 < /etc/passwd | sort
