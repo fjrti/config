@@ -4,7 +4,8 @@ def __authorized_keys(metadata):
     return metadata.Properties['authorized_keys.xml'].XMLMatch(metadata)
 
 def __members_in_acl(keys, acl):
-    return keys.findall('.//ACL[@name="%s"]/Member/text()' % acl)
+    members = keys.findall('.//ACL[@name="%s"]/Member' % acl)
+    return map(lambda x: x.text, members)
 
 def __keys_for_user(keys, user):
     return keys.findall('.//User[@name="%s"]/Key' % user)
