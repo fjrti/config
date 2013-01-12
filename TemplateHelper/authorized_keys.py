@@ -7,7 +7,7 @@ def __members_in_acl(keys, acl):
     return keys.findall('/AuthorizedKeys/ACL[@name="%s"]/Member/text()' % acl)
 
 def __keys_for_user(keys, user):
-    return keys.findall('/AuthorizedKeys/User[@name="%s"]/Key/text()' % user)
+    return keys.findall('/AuthorizedKeys/User[@name="%s"]/Key' % user)
 
 def get_acl(metadata, acl):
     keys = __authorized_keys(metadata)
@@ -16,4 +16,11 @@ def get_acl(metadata, acl):
 def keys_for(metadata, acl):
     keys = __authorized_keys(metadata)
     users = __members_in_acl(keys, acl)
-    return [key for user in users for key in __keys_for_user(keys, user)]
+
+    out = []
+    for user in users:
+        for key in __keys_for_user(keys, user):
+            key_type = key.get('type', 'ssh-rsa')
+            comment = '%s@%s' % (user, key.get('host', 'unknown'))
+            out.append("%s %s %s@%s" % (key_type, key.text, comment))
+    return out
