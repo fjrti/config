@@ -11,6 +11,8 @@
   <Path name='/local/hcs/.gitconfig' />
   <Path name='/local/hcs/.screenrc' />
   <Path name='/local/hcs/.vimrc' />
+  <BoundPath name='/local/hcs/.ssh' type='directory' owner='hcs' group='hcs' mode='700' />
+  <Path name='/local/hcs/.ssh/authorized_keys' />
 
   <BoundPath name='/etc/sudoers.d' type='permissions' owner='root' group='root' mode='755' />
   <Path name='/etc/sudoers.d/50-hcs' />
