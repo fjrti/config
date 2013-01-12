@@ -1,0 +1,19 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+  <xsd:complexType name='PasswordType'>
+    <xsd:simpleContent>
+      <xsd:extension base='xsd:string'>
+        <xsd:attribute name='encrypted' type='xsd:string' />
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+
+  <xsd:element name='Properties'>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name='CommunicationPassword' type='PasswordType' />
+        <xsd:element name='EncryptionPassword' type='PasswordType' />
+      </xsd:sequence>
+      <xsd:attribute name='encryption' type='xsd:string' />
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

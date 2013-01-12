@@ -1,4 +1,4 @@
 <Properties encryption="true">
-  <EncryptionPassword encrypted="config">U2FsdGVkX196+pvDZ5BaceNRTfSh4mqTeXHGJ8fxtcul4JDJJLZBv4lq7Sf6Erlp</EncryptionPassword>
   <CommunicationPassword encrypted="config">U2FsdGVkX1+XXZQbIQaXnHyj3tNQD4fokxDMe+WCCZdIokFVNSTN1eXbcQN0HAOn</CommunicationPassword>
+  <EncryptionPassword encrypted="config">U2FsdGVkX196+pvDZ5BaceNRTfSh4mqTeXHGJ8fxtcul4JDJJLZBv4lq7Sf6Erlp</EncryptionPassword>
 </Properties>
