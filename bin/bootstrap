@@ -65,4 +65,5 @@ bcfg2-admin xcmd Packages.Refresh
 bcfg2 -qn  -C /tmp/bcfg2-client.conf > /dev/null
 bcfg2 -vqe -C /tmp/bcfg2-client.conf
 /etc/init.d/bcfg2-server restart
-bcfg2 -vqe -C /tmp/bcfg2-client.conf
+bcfg2 -qn  -C /etc/bcfg2-bootstrap.conf > /dev/null
+bcfg2 -vqe -C /etc/bcfg2-bootstrap.conf
