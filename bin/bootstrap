@@ -61,6 +61,8 @@ cp /var/lib/bcfg2/Cfg/etc/ssl/certs/config.pem/config.pem /etc/ssl/certs/config.
 /etc/init.d/bcfg2-server restart
 bcfg2-admin xcmd Packages.Refresh
 
-# I think this needs to be run twice? I'm not really sure
-bcfg2 -qn  -C /tmp/bcfg2-client.conf
+# I'm not actually sure how many times you have to run this
+bcfg2 -qn  -C /tmp/bcfg2-client.conf > /dev/null
+bcfg2 -vqe -C /tmp/bcfg2-client.conf
+/etc/init.d/bcfg2-server restart
 bcfg2 -vqe -C /tmp/bcfg2-client.conf
