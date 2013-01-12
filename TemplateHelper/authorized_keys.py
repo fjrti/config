@@ -23,5 +23,5 @@ def keys_for(metadata, acl):
         for key in __keys_for_user(keys, user):
             key_type = key.get('type', 'ssh-rsa')
             comment = '%s@%s' % (user, key.get('host', 'unknown'))
-            out.append("%s %s %s@%s" % (key_type, key.text, comment))
+            out.append(' '.join([key_type, key.text, comment]))
     return out
